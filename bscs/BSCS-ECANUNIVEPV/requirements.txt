@@ -1,0 +1,3 @@
+fdk
+requests
+cx_Oracle

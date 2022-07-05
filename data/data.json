@@ -1,0 +1,30 @@
+{
+    "result": {
+        "transactionId": "0000017174a24992-114cac",
+        "consumerId": "0232AASS100911202002201038060620200220103806060000",
+        "code": "200",
+        "description": "OK",
+        "descriptionDetail": "Operación realizada exitosamente",
+        "responseTimestamp": "2022-06-07T09:00:00.000"
+    },
+    "dataClient": {
+        "EFLGCLIREC": 0,
+        "ECAPENDNEX": 0,
+        "ECANEQU": 0,
+        "EMONCON": 0,
+        "EFLGFULPRE": 0,
+        "EOCCTAX": 0,
+        "EMONCONMOV": 0,
+        "ECANUNIMOV": 0,
+        "EMONCONVEPV": 0,
+        "ECANUNIVEPV": 0,
+        "EMONCONHOG": 0,
+        "ECANUNIHOG": 0,
+        "EOCCNOTAX": 0,
+        "EDEUSERVEN": 0,
+        "EDEUEQVENM": 0,
+        "ESALCAS": 0,
+        "EMINTCASM": 0,
+        "ECANORDPRO": 0
+    }
+}
