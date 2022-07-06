@@ -33,7 +33,7 @@ steps:
     name: "Function Build Siebel Image"
     timeoutInSeconds: 6000
     command: |
-      cd ${OCI_PRIMARY_SOURCE_DIR}/bscs
+      cd ${OCI_PRIMARY_SOURCE_DIR}/siebel
       fn build  --verbose
       echo "
       `docker images`
