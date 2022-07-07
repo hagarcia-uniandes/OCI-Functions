@@ -40,13 +40,13 @@ steps:
       "
       
 outputArtifacts:
-  - name: output_fn_custom_image
+  - name: output_fn_core_image
     type: DOCKER_IMAGE
     # this is only the locally exported container image name
     # this location tag doesn't effect the tag used to deliver the container image
     # to the Container Registry.
     location: core:0.0.0
-  - name: output_fn_default_image
+  - name: output_fn_siebel_image
     type: DOCKER_IMAGE
     # this is only the locally exported container image name
     # this location tag doesn't effect the tag used to deliver the container image
