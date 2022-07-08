@@ -35,6 +35,24 @@ steps:
     command: |
       cd ${OCI_PRIMARY_SOURCE_DIR}/siebel
       fn build  --verbose
+  - type: Command
+    name: "Function Build BSCS Image"
+    timeoutInSeconds: 6000
+    command: |
+      cd ${OCI_PRIMARY_SOURCE_DIR}/bscs
+      fn build  --verbose
+  - type: Command
+    name: "Function Build EOC Image"
+    timeoutInSeconds: 6000
+    command: |
+      cd ${OCI_PRIMARY_SOURCE_DIR}/eoc
+      fn build  --verbose
+  - type: Command
+    name: "Function Build EBS Image"
+    timeoutInSeconds: 6000
+    command: |
+      cd ${OCI_PRIMARY_SOURCE_DIR}/ebs
+      fn build  --verbose
       echo "
       `docker images`
       "
@@ -52,3 +70,21 @@ outputArtifacts:
     # this location tag doesn't effect the tag used to deliver the container image
     # to the Container Registry.
     location: siebel:0.0.0
+  - name: output_fn_bscs_image
+    type: DOCKER_IMAGE
+    # this is only the locally exported container image name
+    # this location tag doesn't effect the tag used to deliver the container image
+    # to the Container Registry.
+    location: bscs:0.0.0
+  - name: output_fn_eoc_image
+    type: DOCKER_IMAGE
+    # this is only the locally exported container image name
+    # this location tag doesn't effect the tag used to deliver the container image
+    # to the Container Registry.
+    location: eoc:0.0.0
+  - name: output_fn_ebs_image
+    type: DOCKER_IMAGE
+    # this is only the locally exported container image name
+    # this location tag doesn't effect the tag used to deliver the container image
+    # to the Container Registry.
+    location: ebs:0.0.0
